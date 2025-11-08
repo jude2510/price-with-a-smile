@@ -96,7 +96,7 @@ python aggregate_results.py --pairs_dir artifacts/pairs --out_csv artifacts/roll
 
 * Local Volatility surfaces yield smoother Δ-hedged P&L and lower RMSE on select days.
 * Black-Scholes sticky vols remain competitive but less stable under smile shifts.
-* Framework is modular for extensions (stochastic vol, rough vol, VIX-based calibration).
+* Framework is modular for extensions (local stochastic volatility models).
 
 ---
 
@@ -105,14 +105,6 @@ python aggregate_results.py --pairs_dir artifacts/pairs --out_csv artifacts/roll
 * Local Stochastic volatility calibration
 * Γ–Θ hedging extensions
 * Monte Carlo-based volatility control
-
----
-
-## ✍️ Citation
-
-If you use this code or framework in research or teaching, please cite:
-
-> Pereira, J. *Price with a Smile: A Production-style Local Volatility Surface & Backtest* (2025).
 
 ---
 
