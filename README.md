@@ -1,4 +1,4 @@
-# Price with a Smile 😄
+# Price with a Smile
 
 *A Production-Style Local Volatility Surface & Δ-Hedging Backtest*
 
@@ -7,7 +7,7 @@ It provides a fully reproducible, parallelizable, and modular pipeline for moder
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 
 * **Goal:** Assess whether local volatility surfaces deliver better daily hedging stability and pricing accuracy than traditional sticky-vol models.
 * **Scope:** From data ingestion → surface calibration → local-vol extraction → PDE pricing → Δ-hedging simulation → backtest aggregation.
@@ -15,7 +15,7 @@ It provides a fully reproducible, parallelizable, and modular pipeline for moder
 
 ---
 
-## ⚙️ Pipeline Components
+## Pipeline Components
 
 | File                   | Description                                                             |
 | ---------------------- | ----------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ It provides a fully reproducible, parallelizable, and modular pipeline for moder
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # install requirements
@@ -56,7 +56,7 @@ PDE_GRID = dict(nS=501, nT=600, span=(0.45, 1.75))
 
 ---
 
-## ☁️ HPC Job Array Example (SOL or similar cluster)
+## HPC Job Array Example (SOL or similar cluster)
 
 ```bash
 python make_pairs.py --start 2025-09-23 --end 2025-11-06
@@ -81,7 +81,7 @@ python aggregate_results.py --pairs_dir artifacts/pairs --out_csv artifacts/roll
 
 ---
 
-## 📊 Outputs
+## Outputs
 
 * **Per-pair CSV/JSON:** in `artifacts/pairs/`
 * **Aggregated metrics:** `artifacts/rolling_hedge_pnl.csv`
@@ -92,7 +92,7 @@ python aggregate_results.py --pairs_dir artifacts/pairs --out_csv artifacts/roll
 
 ---
 
-## 🧩 Results Summary
+## Results Summary
 
 * Local Volatility surfaces yield smoother Δ-hedged P&L and lower RMSE on select days.
 * Black-Scholes sticky vols remain competitive but less stable under smile shifts.
@@ -100,7 +100,7 @@ python aggregate_results.py --pairs_dir artifacts/pairs --out_csv artifacts/roll
 
 ---
 
-## 📈 Future Extensions
+## Future Extensions
 
 * Local Stochastic volatility calibration
 * Γ–Θ hedging extensions
@@ -108,7 +108,7 @@ python aggregate_results.py --pairs_dir artifacts/pairs --out_csv artifacts/roll
 
 ---
 
-## 🧠 Author
+## Author
 
 **Jude Pereira**
 PhD Candidate, Theoretical Physics, Arizona State University
